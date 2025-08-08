@@ -12,7 +12,7 @@ function App() {
   const [score, setScore] = useState(0)
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/quiz-react-app">
       <Routes>
         <Route path="/home" element={<Home user={user} setUser={setUser} />} />
         <Route path="/quiz" element={<Quiz setScore={setScore} user={user}/>} />
